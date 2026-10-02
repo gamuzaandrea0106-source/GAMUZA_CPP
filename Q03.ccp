@@ -19,6 +19,7 @@ int main()
    cin >> bookingPercent;
    cout << "Number of Passengers: ";
    cin >> passengers;
+   cout << "\n";
    
    double distanceCharge = distanceKM * ratePerKM;
    double preFeeTotal = baseFare + distanceCharge + tollFee;
@@ -26,7 +27,6 @@ int main()
    double grandTotal = preFeeTotal + bookingFee;
    double perPassenger = grandTotal / passengers;
    
-   cout << "\n";
    cout << fixed << setprecision(2);
    cout << "Distance Charge: " << distanceCharge << "\n";
    cout << "Pre-fee Total: " << preFeeTotal << "\n";
