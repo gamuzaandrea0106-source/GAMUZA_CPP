@@ -15,13 +15,13 @@ int main()
     cin >> projectScore;
     cout << "Examination Score: ";
     cin >> examScore;
-    cout << "\n";
-
+    
     double weightedGrade = (quizScore * 0.20) + (labScore * 0.25) + (projectScore * 0.25) + (examScore * 0.30);
                         
-    int roundedGrade = static_cast<int>(round(weightedGrade));
-    int truncatedGrade = static_cast<int>(weightedGrade);
+    int roundedGrade = round (weightedGrade);
+    int truncatedGrade = trunc (weightedGrade);
     
+    cout << "\n";
     cout << fixed << setprecision(2);
     cout << "Weighted Grade: " << weightedGrade << "\n";
     cout << "Rounded Grade: " << roundedGrade << "\n";
