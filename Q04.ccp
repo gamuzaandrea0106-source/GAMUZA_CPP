@@ -20,7 +20,7 @@ int main()
     double wallArea = width * height;
     double totalPaintArea = wallArea * coats;
     double exactCans = totalPaintArea / coveragePerCan;
-    int cansToPurchase = (ceil(exactCans));
+    int cansToPurchase = ceil(exactCans);
     
     cout << fixed << setprecision(2);
     cout << "Wall Area: " << wallArea << "\n";
